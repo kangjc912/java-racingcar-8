@@ -30,7 +30,7 @@ class ValidTest {
     @Test
 
     void 입력값이_비어있거나_쉼표로_끝나면_예외() {
-        // given
+
         String emptyInput = "";
         String blankInput = "   ";
         String endsWithComma = "pobi,woni,";
@@ -52,7 +52,7 @@ class ValidTest {
     @Test
 
     void 시도_횟수가_숫자가_아니면_예외() {
-        // given
+
         String notNumber = "a";
         String blank = " ";
         String empty = "";

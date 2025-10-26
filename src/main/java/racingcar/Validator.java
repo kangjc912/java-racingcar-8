@@ -28,6 +28,9 @@ public class Validator {
 
     }
 
+
+
+
     private static void validateName(String name) {
         if (name.isEmpty()) {
             throw new IllegalArgumentException("자동차 이름은 공백일 수 없습니다.");
@@ -37,6 +40,7 @@ public class Validator {
             throw new IllegalArgumentException("자동차 이름은 5자 이하만 가능합니다.");
         }
     }
+
 
 
     public static int validateTryCount(String input) {
@@ -52,6 +56,7 @@ public class Validator {
 
         return tryCount;
     }
+
 
     private static void validatePositiveTryCount(int tryCount) {
         if (tryCount <= 0) {
